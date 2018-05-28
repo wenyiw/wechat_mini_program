@@ -1,0 +1,19 @@
+Springboot & Mybatis Environment Set Up:
+    1. create new project: spring initializr with JDK 1.8
+    2. web-web + sql-mybatis
+    3. check if maven for this project is in accordance with the local maven we have
+
+creating database using sequel pro
+    go to query and type
+    1. create database demo;
+    2. CREATE TABLE tb_area (
+       	area_id int(2) NOT NULL auto_increment,
+       	area_name varchar(200) NOT NULL,
+       	priority int(2) NOT NULL DEFAULT'0',
+       	create_time datetime DEFAULT NULL,
+       	last_edit_time datetime DEFAULT NULL,
+       	PRIMARY KEY(area_id),
+       	UNIQUE KEY UK_AREA(area_name)
+       )ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+http://localhost:8080/demo
